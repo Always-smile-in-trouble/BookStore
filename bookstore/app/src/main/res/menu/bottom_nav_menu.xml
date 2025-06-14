@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+    <item
+        android:id="@+id/nav_location"
+        android:icon="@drawable/baseline_location"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/ic_explore"
+        android:title="" />
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@drawable/ic_account"
+        android:title="" />
+</menu>
+
+<!--    case R.id.nav_history:-->
+<!--    // Mở trang lịch sử thanh toán-->
+<!--    Intent intent3 = new Intent(HomePageActivity.this, OrderHistoryActivity.class);-->
+<!--    startActivity(intent3);-->
+<!--    return true;-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/nav_history"-->
+    <!--        android:icon="@drawable/ic_history"-->
+    <!--        android:title="" />-->

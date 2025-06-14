@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bookstore">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Bookstore"
+        android:name=".MyApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".view.OnboardingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.CartActivity"/>
+        <activity android:name=".view.PaymentInfoConfirmActivity"/>
+        <activity android:name=".view.UploadPaymentActivity"/>
+        <activity android:name=".view.SuccessPaymentActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".view.SliderActivity"/>
+        <activity android:name=".view.ProductDetailActivity"/>
+        <activity android:name=".view.SearchBookActivity"/>
+        <activity android:name=".view.ProductListActivity"/>
+        <activity android:name=".view.AuthActivity"/>
+        <activity android:name=".view.OrderPreviewActivity"/>
+        <activity android:name=".view.PaymentQRCodeActivity"/>
+        <activity android:name=".view.ProfileActivity"/>
+        <activity android:name=".view.HomePageActivity"/>
+        <activity android:name=".view.GoogleMapActivity"/>
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA53tLUN2Jl2DpKwJnKJgESvbZoV6PHy24"/>
+
+    </application>
+
+</manifest>
